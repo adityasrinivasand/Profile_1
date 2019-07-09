@@ -31,17 +31,16 @@ overflow-x:hidden;
     --lightgray: rgba(255,255,255,0);
 }
 
-header 
+header
 {
     background:  #115e75;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/2.jpg"); 
-    height: 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    max-width: 100%;
-        
+}
+
+header a
+{
+    font-family: var(--Heebo);
+    font-size: 0.9em;
+    color: whitesmoke;
 }
 
 img 
@@ -51,12 +50,6 @@ img
 }
   
 
-header .container img
-{
-    height: auto;
-   
-
-}
 
 header a
 {
@@ -66,65 +59,74 @@ header a
     color: whitesmoke;
 }
 
-header .main-nav
-{
-    float: right;
-    padding: 1em;
-    margin-top: 1em;
-    margin-left: 1em;
-    list-style: none;
-    
-}
-header .main-nav li
-{
-   display: inline-block; 
-}
-header .main-nav li a
-{
-    color: whitesmoke;
-    padding: 2em;
-    font-size: 1em;  
-   
-}   
 
-header .main-nav li a:hover
-{
-    color:black;
-}
+/* Style the navigation menu */
+.navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+  }
+  
+  /* Navigation links */
+  .navbar a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center; /* If you want the text to be centered */
+  }
+  
+  /* Add a background color on mouse-over */
+  .navbar a:hover {
+    background-color: #000;
+  }
+  
+  /* Style the current/active link */
+  .navbar a.active {
+    background-color: #4CAF50;
+  }
+  
+  /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left; /* If you want the text to be left-aligned on small screens */
+    }
+  }
+  
 
-header .home .row h1
+header .container  h1
 {
     padding: 0.5em;
-    margin-top: 6em;
+    font-size:2.5vw;
+    margin-bottom: 6em;
     color: antiquewhite;
     font-family: var(--Heebo);
     text-align: center;
 }
 
-header .home .row h4
-{
-    padding: 1em;
-    color: gold;
-    font-size: 1.75em;
-    font-family: var(--DM); 
-    text-align: center;
-}
 
-header .home .row p
+header .container p
 {
-    padding: 1.5em;
-    font-size: 1em;
+    
+    font-size: 1.5em;
+    /*margin-bottom: 17.79em;*/
     font-family: var(--Merrie);
-    color: chocolate;
+    color: whitesmoke;
     text-justify: auto;
     text-align: center;
     position: relative;
+    font-size:2.5vw;
 }
 
 .container 
 {
     position: relative; 
-    max-width: 800px; /* Maximum width */
+    max-width: 100%; /* Maximum width */
     margin: 0 auto; /* Center it */
   }
   
@@ -136,7 +138,7 @@ header .home .row p
     background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
     color: #f1f1f1; /* Grey text */
     width: 100%; /* Full width */
-    padding: 20px; /* Some padding */
+    padding: 1.5em;; /* Some padding */
 }
 
 .responsive
@@ -179,7 +181,7 @@ header .home .row p
 .section-1 .row .about img
 {
     height: auto; 
-    width: 40%;
+    width: 50%;
     padding: 2em;
     float: left;
     border-radius: 2em;  
@@ -202,22 +204,21 @@ header .home .row p
     position: absoulte;
    
     padding: 2em;
-    border-radius: 2em;
-    font-family: var(--Merrie);
-    font-size: 1em;
    
 }
 
-.section-1 .row .about p
+.section-1 .row .about-text
 {   
     padding: 1em;
     margin-top: 1.5em;
-    font-size: 1em;
-    color: rgba(0, 0, 0, 0.952);
+    font-size: 1.25em;
+    color: brown;
     position: relative;
     text-justify: auto;
     text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 
 
 /* section 2 */
@@ -258,12 +259,12 @@ header .home .row p
    
 }
 
-.section-2  .academics p
+.section-2  .academicstext
 {   
-    padding: 1em;
+    padding: 1.2em;
     margin-top: 1.5em;
-    font-size: 1em;
-    color: rgba(0, 0, 0, 0.952);
+    font-size: 1.5em;
+    color: blueviolet;
     position: relative;
     text-justify: auto;
     text-align: center;
@@ -275,6 +276,13 @@ header .home .row p
 {
     padding: 5em;
     background-color: lightblue;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .section-3  .prof img
@@ -290,7 +298,7 @@ header .home .row p
 .section-3 .prof h1
 {
     
-    padding: 0.4em;
+    padding: 1em;
     font-size: 2.75em;
     font-weight: bold;
     text-align: center;
@@ -309,15 +317,16 @@ header .home .row p
    
 }
 
-.section-3  .prof p
+.section-3 .proftext
 {   
     padding: 1em;
     margin-top: 1.5em;
-    font-size: 1em;
-    color: rgba(0, 0, 0, 0.952);
+    font-size: 1.25em;
+    color: #4CAF50;
     position: relative;
     text-justify: auto;
     text-align: center;
+    font-family:var(--DM);
 }
 
 /* section 4 */
@@ -358,15 +367,23 @@ header .home .row p
    
 }
 
-.section-4  .extra p
+
+
+.section-4  .extratext
 {   
-    padding: 1em;
-    margin-top: 1.5em;
-    font-size: 1em;
-    color: rgba(0, 0, 0, 0.952);
+    padding: 2em;
+    font-family: var(--Mountains);
+    margin-top: 1.2em;
+    font-size: 1.5em;
+    color: seagreen;
     position: relative;
     text-justify: auto;
     text-align: center;
+}
+
+.section-4 img
+{
+  border-radius: 50%;
 }
 
 /* section-5 */
@@ -374,12 +391,12 @@ header .home .row p
 
 .section-5 
 {
-    padding: 5em;
+    padding: 3em;
     background-color: burlywood;
     
 }
 
-.section-5 .gallery h1
+.section-5  h1
 {
     
     padding: 0.4em;
@@ -389,7 +406,6 @@ header .home .row p
     font-family: var(--Mountains);
     
 }
-
   
   /* Create four equal columns that sits next to each other */
   .column {
@@ -428,26 +444,107 @@ header .home .row p
 
     background-color: rgba(0, 0, 0, 0.75);
     overflow-x: hidden;
-    padding: 2em;
+    padding: 1em;
+    height: auto;
+    width: auto;
 }
 
   footer h4
 {
   color: aliceblue;
+  
   font-family: --Merrie;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 footer p
 {
-    color: seagreen;
-    font-family: var(--Indie);
+    color: sandybrown;
     text-align: left;
-
+    font-family: var(--Heebo);
 }
+
+
  
 
+/* Images Align */
+
+.section-4 img 
+{
+    width: 200px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.section-2 img 
+{
+    width: 12.5em;
+    height: 25em;
+    object-fit: cover;
+}
 
 
 
+/* SlideShow*/
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container 
+{
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
