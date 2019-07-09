@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display|Heebo|Indie+Flower|Merriweather|Mountains+of+Christmas|Noto+Serif|Slabo+27px|Work+Sans&display=swap'); 
+
+
+
+
+*
+{
+    box-sizing: border-box;
+}
+
+body,html
+{ height: 100%;
+
+}
+header,
+section
+{
+overflow-x:hidden;
+}
+
+
+:root{
+    --DM:"DM Serif Display",cursive; 
+    --Heebo:"Heebo",cursive; 
+    --Indie:"Indie Flower",cursive; 
+    --Merrie:"Merriweather",cursive; 
+    --Mountains:"Mountains of Christmas",cursive; 
+    --Noto:"Noto Serif",cursive; 
+    --lightblack: #2e2e2e;
+    --bggradient: linear-gradient(to bottom,#dd2476,#ff512ff);
+    --lightgray: rgba(255,255,255,0);
+}
+
+header 
+{
+    background:  #115e75;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/2.jpg"); 
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    max-width: 100%;
+        
+}
+
+img 
+{
+    width: 100%;
+    height: auto;
+}
+  
+
+header .container img
+{
+    height: auto;
+   
+
+}
+
+header a
+{
+    
+    font-family: var(--Heebo);
+    font-size: 1em;
+    color: whitesmoke;
+}
+
+header .main-nav
+{
+    float: right;
+    padding: 1em;
+    margin-top: 1em;
+    margin-left: 1em;
+    list-style: none;
+    
+}
+header .main-nav li
+{
+   display: inline-block; 
+}
+header .main-nav li a
+{
+    color: whitesmoke;
+    padding: 2em;
+    font-size: 1em;  
+   
+}   
+
+header .main-nav li a:hover
+{
+    color:black;
+}
+
+header .home .row h1
+{
+    padding: 0.5em;
+    margin-top: 6em;
+    color: antiquewhite;
+    font-family: var(--Heebo);
+    text-align: center;
+}
+
+header .home .row h4
+{
+    padding: 1em;
+    color: gold;
+    font-size: 1.75em;
+    font-family: var(--DM); 
+    text-align: center;
+}
+
+header .home .row p
+{
+    padding: 1.5em;
+    font-size: 1em;
+    font-family: var(--Merrie);
+    color: chocolate;
+    text-justify: auto;
+    text-align: center;
+    position: relative;
+}
+
+.container 
+{
+    position: relative; 
+    max-width: 800px; /* Maximum width */
+    margin: 0 auto; /* Center it */
+  }
+  
+.container .content 
+{
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 20px; /* Some padding */
+}
+
+.responsive
+{
+    width: 100%;
+    height: auto;
+}
+
+.center
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+} 
+
+.column
+{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+  
+  /* Clear floats after image containers */
+ .row::after 
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* section 1 */
+.section-1 
+{
+    padding: 5em;
+    background: wheat;
+}
+
+.section-1 .row .about img
+{
+    height: auto; 
+    width: 40%;
+    padding: 2em;
+    float: left;
+    border-radius: 2em;  
+    display: inline-block; 
+    
+}
+
+.section-1 .row .about h1
+{
+    
+    padding: 0.4em;
+    font-size: 2.75em;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.section-1 .row .about
+{
+    position: absoulte;
+   
+    padding: 2em;
+    border-radius: 2em;
+    font-family: var(--Merrie);
+    font-size: 1em;
+   
+}
+
+.section-1 .row .about p
+{   
+    padding: 1em;
+    margin-top: 1.5em;
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.952);
+    position: relative;
+    text-justify: auto;
+    text-align: center;
+}
+
+
+/* section 2 */
+.section-2 
+{
+    padding: 5em;
+    background: aquamarine;
+}
+
+.section-2  .academics img
+{
+    height: auto; 
+    width: 100%;
+    display: inline-block; 
+    
+    border-radius: 2em;  
+    
+}
+
+.section-2  .academics h1
+{
+    
+    padding: 0.4em;
+    font-size: 2.75em;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.section-2  .academics
+{
+    position: absoulte;
+   
+    padding: 2em;
+    border-radius: 2em;
+    font-family: var(--Merrie);
+    font-size: 1em;
+   
+}
+
+.section-2  .academics p
+{   
+    padding: 1em;
+    margin-top: 1.5em;
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.952);
+    position: relative;
+    text-justify: auto;
+    text-align: center;
+}
+
+
+/* section 3 */
+.section-3 
+{
+    padding: 5em;
+    background-color: lightblue;
+}
+
+.section-3  .prof img
+{
+    height: auto; 
+    width: 100%;
+    display: inline-block; 
+    
+    border-radius: 2em;  
+    
+}
+
+.section-3 .prof h1
+{
+    
+    padding: 0.4em;
+    font-size: 2.75em;
+    font-weight: bold;
+    text-align: center;
+    font-family: var(--Mountains);
+    
+}
+
+.section-3  .prof
+{
+    position: absoulte;
+   
+   
+    border-radius: 2em;
+    font-family: var(--Merrie);
+    font-size: 1em;
+   
+}
+
+.section-3  .prof p
+{   
+    padding: 1em;
+    margin-top: 1.5em;
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.952);
+    position: relative;
+    text-justify: auto;
+    text-align: center;
+}
+
+/* section 4 */
+.section-4 
+{
+    padding: 5em;
+    background-color: silver;
+    
+}
+
+.section-4  .extra img
+{
+    height: auto; 
+    width: 100%;
+    display: inline-block; 
+   
+    border-radius: 50%;  
+    
+}
+
+.section-4 .extra h1
+{
+    
+    padding: 0.4em;
+    font-size: 2.75em;
+    font-weight: bold;
+    text-align: center;
+    font-family: var(--Mountains);
+    
+}
+
+.section-4  .extra
+{
+    position: relative;
+    border-radius: 2em;
+    font-family: var(--Merrie);
+    font-size: 1em;
+   
+}
+
+.section-4  .extra p
+{   
+    padding: 1em;
+    margin-top: 1.5em;
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.952);
+    position: relative;
+    text-justify: auto;
+    text-align: center;
+}
+
+/* section-5 */
+
+
+.section-5 
+{
+    padding: 5em;
+    background-color: burlywood;
+    
+}
+
+.section-5 .gallery h1
+{
+    
+    padding: 0.4em;
+    font-size: 2.75em;
+    font-weight: bold;
+    text-align: center;
+    font-family: var(--Mountains);
+    
+}
+
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns 
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other 
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }*/
+
+
+  /* Footer */
+
+  footer
+{
+
+    background-color: rgba(0, 0, 0, 0.75);
+    overflow-x: hidden;
+    padding: 2em;
+}
+
+  footer h4
+{
+  color: aliceblue;
+  font-family: --Merrie;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+ 
+
+
+
+
