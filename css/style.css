@@ -439,6 +439,13 @@ header .home .row p
   font-size: 1.5em;
 }
 
+footer p
+{
+    color: seagreen;
+    font-family: var(--Indie);
+    text-align: left;
+
+}
  
 
 
