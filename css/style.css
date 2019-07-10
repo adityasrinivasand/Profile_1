@@ -45,7 +45,7 @@ header a
 
 img 
 {
-    width: 100%;
+    width: 50%;
     height: auto;
 }
   
@@ -141,9 +141,13 @@ header .container p
     padding: 1.5em;; /* Some padding */
 }
 
+
+
 .responsive
 {
-    width: 100%;
+    max-width: 100%;
+    width:  100%;
+    
     height: auto;
 }
 
@@ -176,16 +180,20 @@ header .container p
 {
     padding: 5em;
     background: wheat;
+    
 }
 
 .section-1 .row .about img
 {
     height: auto; 
-    width: 50%;
+    width: 75%;
     padding: 2em;
-    float: left;
-    border-radius: 2em;  
-    display: inline-block; 
+    float: left;;
+    max-width: 50%;
+    border-radius: 75%;
+     
+    
+     
     
 }
 
@@ -193,7 +201,7 @@ header .container p
 {
     
     padding: 0.4em;
-    font-size: 2.75em;
+    font-size: 2.5vw;
     font-weight: bold;
     text-align: center;
     
@@ -211,12 +219,15 @@ header .container p
 {   
     padding: 1em;
     margin-top: 1.5em;
-    font-size: 1.25em;
+    font-size: 1.5vw;
     color: brown;
     position: relative;
     text-justify: auto;
-    text-align: center;
+    text-align: left;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+  
+  
 }
 
 
@@ -226,15 +237,20 @@ header .container p
 {
     padding: 5em;
     background: aquamarine;
+    
+    
 }
 
 .section-2  .academics img
 {
-    height: auto; 
-    width: 100%;
-    display: inline-block; 
     
-    border-radius: 2em;  
+    
+    column-count: 2; 
+    max-height: 50%;
+    max-width: 10%;
+    
+     
+    
     
 }
 
@@ -242,7 +258,7 @@ header .container p
 {
     
     padding: 0.4em;
-    font-size: 2.75em;
+    font-size: 2.55vw;
     font-weight: bold;
     text-align: center;
     
@@ -255,7 +271,7 @@ header .container p
     padding: 2em;
     border-radius: 2em;
     font-family: var(--Merrie);
-    font-size: 1em;
+    font-size: 1.5vw;
    
 }
 
@@ -263,7 +279,7 @@ header .container p
 {   
     padding: 1.2em;
     margin-top: 1.5em;
-    font-size: 1.5em;
+    font-size: 1.5vw;
     color: blueviolet;
     position: relative;
     text-justify: auto;
@@ -278,7 +294,8 @@ header .container p
     background-color: lightblue;
 }
 
-.centered {
+.centered 
+{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -321,7 +338,7 @@ header .container p
 {   
     padding: 1em;
     margin-top: 1.5em;
-    font-size: 1.25em;
+    font-size: 1.25vw;
     color: #4CAF50;
     position: relative;
     text-justify: auto;
@@ -338,12 +355,13 @@ header .container p
 }
 
 .section-4  .extra img
-{
+{ 
+    
     height: auto; 
     width: 100%;
     display: inline-block; 
    
-    border-radius: 50%;  
+     
     
 }
 
@@ -374,13 +392,14 @@ header .container p
     padding: 2em;
     font-family: var(--Mountains);
     margin-top: 1.2em;
-    font-size: 1.5em;
+    font-size: 1.5vw;
     color: seagreen;
     position: relative;
     text-justify: auto;
     text-align: center;
 }
 
+/*
 .section-4 img
 {
   border-radius: 50%;
