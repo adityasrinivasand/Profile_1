@@ -31,10 +31,7 @@ overflow-x:hidden;
     --lightgray: rgba(255,255,255,0);
 }
 
-header
-{
-    background:  #115e75;
-}
+
 
 header a
 {
@@ -61,7 +58,8 @@ header a
 
 
 /* Style the navigation menu */
-.navbar {
+.navbar 
+{
     width: 100%;
     background-color: #555;
     overflow: auto;
@@ -70,16 +68,17 @@ header a
   /* Navigation links */
   .navbar a {
     float: left;
-    padding: 12px;
+    padding: 0.75em;
     color: white;
     text-decoration: none;
-    font-size: 17px;
-    width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    font-size: 1em;
+    width: 16.666667%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
     text-align: center; /* If you want the text to be centered */
   }
   
   /* Add a background color on mouse-over */
-  .navbar a:hover {
+  .navbar a:hover 
+  {
     background-color: #000;
   }
   
@@ -89,7 +88,8 @@ header a
   }
   
   /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 500px)
+   {
     .navbar a {
       float: none;
       display: block;
@@ -102,10 +102,10 @@ header a
 header .container  h1
 {
     padding: 0.5em;
-    font-size:2.5vw;
+    font-size:2.5em;
     margin-bottom: 6em;
     color: antiquewhite;
-    font-family: var(--Heebo);
+    font-family: var(--Indie);
     text-align: center;
 }
 
@@ -120,7 +120,7 @@ header .container p
     text-justify: auto;
     text-align: center;
     position: relative;
-    font-size:2.5vw;
+    font-size:2.5em;
 }
 
 .container 
@@ -178,7 +178,7 @@ header .container p
 /* section 1 */
 .section-1 
 {
-    padding: 5em;
+    padding: 0.5em;
     background: wheat;
     
 }
@@ -191,43 +191,34 @@ header .container p
     float: left;;
     max-width: 50%;
     border-radius: 75%;
-     
-    
-     
+
     
 }
 
 .section-1 .row .about h1
 {
     
-    padding: 0.4em;
-    font-size: 2.5vw;
+    padding: 0.5em;
+    font-size: 2.5em;
     font-weight: bold;
     text-align: center;
+    font-family: var(--Mountains);
     
 }
 
-.section-1 .row .about
-{
-    position: absoulte;
-   
-    padding: 2em;
-   
-}
+
 
 .section-1 .row .about-text
 {   
     padding: 1em;
     margin-top: 1.5em;
-    font-size: 1.5vw;
+    font-size: 1.25em;
     color: brown;
     position: relative;
     text-justify: auto;
     text-align: left;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
-  
-  
+    font-family: var(--Indie);
+
 }
 
 
@@ -235,8 +226,8 @@ header .container p
 /* section 2 */
 .section-2 
 {
-    padding: 5em;
-    background: aquamarine;
+    padding: 0.5em;
+    background-color: lightblue;
     
     
 }
@@ -287,10 +278,11 @@ header .container p
 .section-2  .academics h1
 {
     
-    padding: 0.4em;
+    padding: 0.5em;
     font-size: 2.5em;;
     font-weight: bold;
     text-align: center;
+    font-family: var(--Mountains);
     
 }
 
@@ -307,67 +299,47 @@ header .container p
 
 .section-2  .academicstext
 {   
-    padding: 1.2em;
+    padding: 1em;
     margin-top: 1.5em;
-    font-size: 1.5vw;
+    font-size: 1.25em;
     color: blueviolet;
     position: relative;
     text-justify: auto;
     text-align: center;
+    font-family: var(--Indie);
 }
 
 
 /* section 3 */
 .section-3 
 {
-    padding: 5em;
-    background-color: lightblue;
+    padding: 0.5em;
+    background: wheat;
+    
 }
-
-.centered 
-{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 
 
 .section-3 .prof h1
 {
     
-    padding: 1em;
-    font-size: 2.75em;
+    padding: 0.5em;
+    font-size: 2.5em;
     font-weight: bold;
     text-align: center;
     font-family: var(--Mountains);
     
 }
 
-
-
-.section-3  .prof
-{
-    position: absoulte;
-   
-   
-    border-radius: 2em;
-    font-family: var(--Merrie);
-    font-size: 1em;
-   
-}
-
 .section-3 .proftext
 {   
     padding: 1em;
     margin-top: 1.5em;
-    font-size: 1.25vw;
+    font-size: 1.25em;
     color: #4CAF50;
     position: relative;
     text-justify: auto;
     text-align: center;
-    font-family:var(--DM);
+    font-family:var(--Indie);
 }
 
 
@@ -384,7 +356,7 @@ header .container p
   margin-top: 0.5em;
   vertical-align: middle;
   width: 100%;
-  border-radius: 50%;
+  
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -408,57 +380,37 @@ header .container p
 /* section 4 */
 .section-4 
 {
-    padding: 5em;
+    padding: 0.5em;
     background-color: silver;
     
 }
 
-.section-4  .extra img
-{ 
-    
-    height: auto; 
-    width: 100%;
-    display: inline-block; 
-   
-     
-    
-}
 
 .section-4 .extra h1
 {
     
-    padding: 0.4em;
-    font-size: 2.75em;
+    padding: 0.5em;
+    font-size: 2.5em;
     font-weight: bold;
     text-align: center;
     font-family: var(--Mountains);
     
 }
 
-.section-4  .extra
-{
-    position: relative;
-    border-radius: 2em;
-    font-family: var(--Merrie);
-    font-size: 1em;
-   
-}
-
-
 
 .section-4  .extratext
 {   
     padding: 2em;
-    font-family: var(--Mountains);
+    font-family: var(--Indie);
     margin-top: 1.2em;
-    font-size: 1.5vw;
+    font-size: 1.25em;
     color: seagreen;
     position: relative;
     text-justify: auto;
     text-align: center;
 }
 
-/*
+
 .section-4 img
 {
   border-radius: 50%;
@@ -470,15 +422,15 @@ header .container p
 .section-5 
 {
     padding: 3em;
-    background-color: burlywood;
+    background: wheat;
     
 }
 
 .section-5  h1
 {
     
-    padding: 0.4em;
-    font-size: 2.75em;
+    padding: 0.5em;
+    font-size: 2.5em;
     font-weight: bold;
     text-align: center;
     font-family: var(--Mountains);
@@ -524,19 +476,18 @@ header .container p
 {
 
     background-color: rgba(0, 0, 0, 0.75);
-    overflow-x: hidden;
-    padding: 1em;
-    height: auto;
-    width: auto;
+    
+    padding: 0.2em;
+    
 }
 
   footer h4
 {
   color: aliceblue;
   
-  font-family: --Merrie;
+  font-family: var(--Mountains);
   text-align: center;
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 footer p
@@ -549,21 +500,7 @@ footer p
 
  
 
-/* Images Align */
 
-.section-4 img 
-{
-    width: 200px;
-    height: 400px;
-    object-fit: cover;
-}
-
-.section-2 img 
-{
-    width: 12.5em;
-    height: 25em;
-    object-fit: cover;
-}
 
 
 
@@ -579,8 +516,6 @@ img {vertical-align: middle;}
   position: relative;
   margin: auto;
 }
-
-/* Caption text */
 
 
 /* Number text (1/3 etc) */
