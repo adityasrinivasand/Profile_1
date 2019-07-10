@@ -101,9 +101,9 @@ header a
 
 header .container  h1
 {
-    padding: 0.5em;
+    padding: 0em;
     font-size:2.5em;
-    margin-bottom: 6em;
+    margin-bottom: 5em;
     color: antiquewhite;
     font-family: var(--Indie);
     text-align: center;
@@ -286,17 +286,6 @@ header .container p
     text-align: center;
     font-family: var(--Mountains);
     
-}
-
-.section-2  .academics
-{
-    position: absoulte;
-   
-    padding: 2em;
-    border-radius: 2em;
-    font-family: var(--Merrie);
-    font-size: 1.5em;
-   
 }
 
 .section-2  .academicstext
