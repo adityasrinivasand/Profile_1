@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=DM+Serif+Display|Heebo|Indie+Flower|Merriweather|Mountains+of+Christmas|Noto+Serif|Slabo+27px|Work+Sans&display=swap'); 
 
 
-
+/* ---------------------------------------- Header---------------------------------------- */
 
 *
 {
@@ -9,94 +9,89 @@
 }
 
 body,html
-{ height: 100%;
-
+{ 
+  height: 100%;
 }
+
 header,
 section
 {
-overflow-x:hidden;
+  overflow-x:hidden;
 }
 
-
-:root{
-    --DM:"DM Serif Display",cursive; 
-    --Heebo:"Heebo",cursive; 
-    --Indie:"Indie Flower",cursive; 
-    --Merrie:"Merriweather",cursive; 
-    --Mountains:"Mountains of Christmas",cursive; 
-    --Noto:"Noto Serif",cursive; 
-    --lightblack: #2e2e2e;
-    --bggradient: linear-gradient(to bottom,#dd2476,#ff512ff);
-    --lightgray: rgba(255,255,255,0);
+:root
+{
+  --DM:"DM Serif Display",cursive; 
+  --Heebo:"Heebo",cursive; 
+  --Indie:"Indie Flower",cursive; 
+  --Merrie:"Merriweather",cursive; 
+  --Mountains:"Mountains of Christmas",cursive; 
+  --Noto:"Noto Serif",cursive; 
+  --lightblack: #2e2e2e;
+  --bggradient: linear-gradient(to bottom,#dd2476,#ff512ff);
+  --lightgray: rgba(255,255,255,0);
 }
-
-
 
 header a
 {
-    font-family: var(--Heebo);
-    font-size: 0.9em;
-    color: whitesmoke;
+  font-family: var(--Heebo);
+  font-size: 0.9em;
+  color: whitesmoke;
 }
 
 img 
 {
-    width: 50%;
-    height: auto;
+  width: 50%;
+  height: auto;
 }
-  
-
 
 header a
 {
     
-    font-family: var(--Heebo);
-    font-size: 1em;
-    color: whitesmoke;
+  font-family: var(--Heebo);
+  font-size: 1em;
+  color: whitesmoke;
 }
 
-
-/* Style the navigation menu */
-.navbar 
+.navbar /* Style the navigation menu */
 {
-    width: 100%;
-    background-color: #555;
-    overflow: auto;
-  }
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+} 
   
-  /* Navigation links */
-  .navbar a {
-    float: left;
-    padding: 0.75em;
-    color: white;
-    text-decoration: none;
-    font-size: 1em;
-    width: 16.666667%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
-    text-align: center; /* If you want the text to be centered */
-  }
+.navbar a /* Navigation links */
+{
+  float: left;
+  padding: 0.75em;
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  width: 16.666667%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
   
-  /* Add a background color on mouse-over */
-  .navbar a:hover 
-  {
-    background-color: #000;
-  }
+.navbar a:hover /* Add a background color on mouse-over */
+{
+  background-color: #000;
+}
   
-  /* Style the current/active link */
-  .navbar a.active {
-    background-color: #4CAF50;
-  }
   
-  /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
-  @media screen and (max-width: 500px)
-   {
-    .navbar a {
+.navbar a.active /* Style the current/active link */
+{
+  background-color: #4CAF50;
+}
+ 
+@media screen and (max-width: 500px)/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+{
+    .navbar a 
+    {
       float: none;
       display: block;
       width: 100%;
       text-align: left; /* If you want the text to be left-aligned on small screens */
     }
-  }
+}
   
 
 header .container  h1
@@ -109,12 +104,14 @@ header .container  h1
     text-align: center;
 }
 
+/* ---------------------------------------- General Classes Declaration---------------------------------------- */
+
 
 header .container p
 {
     
     font-size: 1.5em;
-    /*margin-bottom: 17.79em;*/
+    
     font-family: var(--Merrie);
     color: whitesmoke;
     text-justify: auto;
@@ -141,13 +138,10 @@ header .container p
     padding: 1.5em;; /* Some padding */
 }
 
-
-
 .responsive
 {
     max-width: 100%;
-    width:  100%;
-    
+    width:  100%; 
     height: auto;
 }
 
@@ -166,8 +160,7 @@ header .container p
     padding: 5px;
 }
   
-  /* Clear floats after image containers */
- .row::after 
+ .row::after /* Clear floats after image containers */
 {
     content: "";
     clear: both;
@@ -175,12 +168,13 @@ header .container p
 }
 
 
-/* section 1 */
+/* ---------------------------------------- Section-1---------------------------------------- */
+
+
 .section-1 
 {
     padding: 0.5em;
-    background: wheat;
-    
+    background: wheat; 
 }
 
 .section-1 .row .about img
@@ -191,8 +185,6 @@ header .container p
     float: left;;
     max-width: 50%;
     border-radius: 75%;
-
-    
 }
 
 .section-1 .row .about h1
@@ -203,11 +195,7 @@ header .container p
     font-weight: bold;
     text-align: center;
     font-family: var(--Mountains);
-    
-    
 }
-
-
 
 .section-1 .row .about-text
 {   
@@ -219,19 +207,17 @@ header .container p
     text-justify: auto;
     text-align: left;
     font-family: var(--Indie);
-    
-
 }
 
 
 
-/* section 2 */
+/* ---------------------------------------- Section-2---------------------------------------- */
+
+
 .section-2 
 {
     padding: 0.5em;
-    background-color: lightblue;
-    
-    
+    background-color: lightblue;    
 }
 
 .row 
@@ -248,7 +234,6 @@ header .container p
   padding: 0 0.25em;
 }
 
-
 .columnaca img 
 {
   margin-top: 0.5em;
@@ -256,8 +241,7 @@ header .container p
   width: 100%;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) 
+@media screen and (max-width: 800px) /* Responsive layout - makes a two column-layout instead of four columns */
 {
   .columnaca {
     flex: 50%;
@@ -265,17 +249,14 @@ header .container p
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) 
+
+@media screen and (max-width: 600px) /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 {
   .columnaca {
     flex: 100%;
     max-width: 100%;
   }
 }
-
-
-
 
 .section-2  .academics h1
 {
@@ -301,14 +282,15 @@ header .container p
 }
 
 
-/* section 3 */
+/* ---------------------------------------- Section-3---------------------------------------- */
+
+
 .section-3 
 {
     padding: 0.5em;
     background: wheat;
     
 }
-
 
 .section-3 .prof h1
 {
@@ -333,7 +315,6 @@ header .container p
     font-family:var(--Indie);
 }
 
-
 .columnprof 
 {
   flex: 50%;
@@ -341,41 +322,41 @@ header .container p
   padding: 0 0.25em;
 }
 
-
 .columnprof img 
 {
   margin-top: 0.5em;
   vertical-align: middle;
-  width: 100%;
-  
+  width: 100%;  
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) 
+@media screen and (max-width: 800px) /* Responsive layout - makes a two column-layout instead of four columns */
 {
-  .columnprof {
+  .columnprof 
+  {
     flex: 50%;
     max-width: 50%;
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) 
+@media screen and (max-width: 600px) /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 {
-  .columnprof {
+  .columnprof 
+  {
     flex: 100%;
     max-width: 100%;
   }
 }
 
-/* section 4 */
+
+/* ---------------------------------------- Section-4---------------------------------------- */
+
+
 .section-4 
 {
     padding: 0.5em;
     background-color: silver;
     
 }
-
 
 .section-4 .extra h1
 {
@@ -387,7 +368,6 @@ header .container p
     font-family: var(--Mountains);
     
 }
-
 
 .section-4  .extratext
 {   
@@ -401,13 +381,44 @@ header .container p
     text-align: center;
 }
 
-
 .section-4 img
 {
   border-radius: 50%;
 }
 
-/* section-5 */
+.columnextra 
+{
+  flex: 25%;
+  max-width:25%;
+  padding: 0 0.25em;
+}
+
+
+.columnextra img 
+{
+  margin-top: 0.5em;
+  vertical-align: middle;
+  width: 25%;
+}
+
+@media screen and (max-width: 800px) /* Responsive layout - makes a two column-layout instead of four columns */
+{
+  .columnextra {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+{
+  .columnextra {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+/* ---------------------------------------- Section-5---------------------------------------- */
 
 
 .section-5 
@@ -427,73 +438,6 @@ header .container p
     font-family: var(--Mountains);
     
 }
-  
-.columnextra 
-{
-  flex: 25%;
-  max-width:25%;
-  padding: 0 0.25em;
-}
-
-
-.columnextra img 
-{
-  margin-top: 0.5em;
-  vertical-align: middle;
-  width: 25%;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) 
-{
-  .columnextra {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) 
-{
-  .columnextra {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-
-  /* Footer */
-
-  footer
-{
-
-    background-color: rgba(0, 0, 0, 0.75);
-    
-    padding: 0.2em;
-    
-}
-
-  footer h4
-{
-  color: aliceblue;
-  
-  font-family: var(--Mountains);
-  text-align: center;
-  font-size: 2.5em;
-}
-
-footer p
-{
-    color: sandybrown;
-    text-align: left;
-    font-family: var(--Heebo);
-}
-
-
- 
-
-
-
-
 
 /* SlideShow*/
 
@@ -555,3 +499,40 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+
+ 
+
+  /* ---------------------------------------- Footer---------------------------------------- */
+
+  footer
+{
+
+    background-color: rgba(0, 0, 0, 0.75);
+    
+    padding: 0.2em;
+    
+}
+
+  footer h4
+{
+  color: aliceblue;
+  
+  font-family: var(--Mountains);
+  text-align: center;
+  font-size: 2.5em;
+}
+
+footer p
+{
+    color: sandybrown;
+    text-align: left;
+    font-family: var(--Heebo);
+}
+
+
+ 
+/* ---------------------------------------- End of CSS---------------------------------------- */
+
+
+
+
