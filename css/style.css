@@ -204,6 +204,7 @@ header .container p
     text-align: center;
     font-family: var(--Mountains);
     
+    
 }
 
 
@@ -218,6 +219,7 @@ header .container p
     text-justify: auto;
     text-align: left;
     font-family: var(--Indie);
+    max-height: 50%;
 
 }
 
