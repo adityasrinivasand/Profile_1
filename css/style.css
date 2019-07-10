@@ -241,24 +241,54 @@ header .container p
     
 }
 
-.section-2  .academics img
+.row 
 {
-    
-    
-    column-count: 2; 
-    max-height: 50%;
-    max-width: 10%;
-    
-     
-    
-    
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0.25em;
 }
+
+.columnaca 
+{
+  flex: 50%;
+  max-width:50%;
+  padding: 0 0.25em;
+}
+
+
+.columnaca img 
+{
+  margin-top: 0.5em;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) 
+{
+  .columnaca {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) 
+{
+  .columnaca {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
 
 .section-2  .academics h1
 {
     
     padding: 0.4em;
-    font-size: 2.55vw;
+    font-size: 2.5em;;
     font-weight: bold;
     text-align: center;
     
@@ -271,7 +301,7 @@ header .container p
     padding: 2em;
     border-radius: 2em;
     font-family: var(--Merrie);
-    font-size: 1.5vw;
+    font-size: 1.5em;
    
 }
 
@@ -302,15 +332,7 @@ header .container p
   transform: translate(-50%, -50%);
 }
 
-.section-3  .prof img
-{
-    height: auto; 
-    width: 100%;
-    display: inline-block; 
-    
-    border-radius: 2em;  
-    
-}
+
 
 .section-3 .prof h1
 {
@@ -322,6 +344,8 @@ header .container p
     font-family: var(--Mountains);
     
 }
+
+
 
 .section-3  .prof
 {
@@ -344,6 +368,41 @@ header .container p
     text-justify: auto;
     text-align: center;
     font-family:var(--DM);
+}
+
+
+.columnprof 
+{
+  flex: 50%;
+  max-width:50%;
+  padding: 0 0.25em;
+}
+
+
+.columnprof img 
+{
+  margin-top: 0.5em;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) 
+{
+  .columnprof {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) 
+{
+  .columnprof {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 /* section 4 */
@@ -426,35 +485,38 @@ header .container p
     
 }
   
-  /* Create four equal columns that sits next to each other */
-  .column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-  }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-  }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns 
-  @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other 
-  @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }*/
+.columnextra 
+{
+  flex: 25%;
+  max-width:25%;
+  padding: 0 0.25em;
+}
 
+
+.columnextra img 
+{
+  margin-top: 0.5em;
+  vertical-align: middle;
+  width: 25%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) 
+{
+  .columnextra {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) 
+{
+  .columnextra {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
 
   /* Footer */
 
